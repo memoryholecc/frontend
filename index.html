@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="referrer" content="same-origin">
+    <meta name="description"
+      content="Memory Hole provides a public archive of paywalled content. Free for all, forever." />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preload" href="/static/fonts/assistant/Assistant-VF.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/static/fonts/assistant/style.css">
+    <title>Memory Hole</title>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <style>
+      .__init_whtie_bg {
+        background-color: #FFFFFF;
+      }
+      .__init_dark_bg {
+        background-color: #161616;
+      }
+    </style>
+    <script>
+      if(window.localStorage) {
+        var prefer_dark_theme = window.localStorage.getItem('prefer_dark_theme');
+        if(prefer_dark_theme === 'true') {
+          document.body.className = "__init_dark_bg";
+        } else {
+          document.body.className = "__init_white_bg";
+        }
+      }
+    </script>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
+
+</html>

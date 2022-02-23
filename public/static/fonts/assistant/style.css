@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Assistant';
+  src: url('Assistant-VF.woff2') format('woff2 supports variations'),
+    url('Assistant-VF.woff2') format('woff2-variations');
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
